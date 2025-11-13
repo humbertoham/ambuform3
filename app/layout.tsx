@@ -3,8 +3,8 @@ import "./globals.css";
 import {RegisterServiceWorker} from "@/components/RegisterServiceWorker";
 
 export const metadata: Metadata = {
-  title: "AmbulanciasTVR Formulario",
-  description: "Generador de Reportes de AmubulanciasTVR",
+  title: "Asistencia Médica Chihuahua Formulario",
+  description: "Generador de Reportes de Asistencia Médica Chihuahua",
 };
 
 export default function RootLayout({
