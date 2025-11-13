@@ -719,17 +719,16 @@ if (selectedFile) {
 
 
     // 6. Serialize and download
-    const pdfBytes = await pdfDoc.save();
-    const blob = new Blob([pdfBytes], { type: 'application/pdf' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `reporte_${formData.name || 'paciente'}.pdf`;
-    a.click();
-    URL.revokeObjectURL(url);
-
-     
-
+ const pdfBytes = await pdfDoc.save();
+const blob = new Blob([pdfBytes.buffer as ArrayBuffer], {
+  type: 'application/pdf',
+});
+const url = URL.createObjectURL(blob);
+const a = document.createElement('a');
+a.href = url;
+a.download = `reporte_${formData.name || 'paciente'}.pdf`;
+a.click();
+URL.revokeObjectURL(url);
 
   };
 
