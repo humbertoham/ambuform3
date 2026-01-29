@@ -591,10 +591,10 @@ hospital.forEach(([left, right]) => {
 currentY3 = addSectionTitle3('Personal', currentY3 - 20);
 const personal = [
   [`Jefe de Servicios: ${formData.serviceC}`, ``],
-  [`T.U.M: ${formData.serviceC}`, ``],
+  [`T.U.M: ${formData.tUM1}`, ``],
   [`T.U.M: ${formData.tUM2}`, ``],
   [`Médico: ${formData.serviceM}`, ``],
-  [`Operador: ${formData.medicineDosis}` ,`` ],
+  [`Operador: ${formData.operator}` ,`` ],
 
 ];
 
